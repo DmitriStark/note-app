@@ -104,7 +104,7 @@ function App(){
     <Route path="edit" element = {<EditNote onSubmit ={onUpdateNote} onAddTag ={addTag} availibleTags = {tags}/>}/>
     
   </Route>
-  <Route path ="*" element = {<Navigate to = "https://aw3s0m3ss.github.io/note-app/"/>}/>
+  <Route path ="https://aw3s0m3ss.github.io/note-app/" element = {<Navigate to = "https://aw3s0m3ss.github.io/note-app/"/>}/>
   </Routes>
   </Container>
   )
