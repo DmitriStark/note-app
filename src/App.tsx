@@ -98,8 +98,8 @@ function App(){
     <Container className="my-4">
   <Routes>
   <Route path ="https://aw3s0m3ss.github.io/note-app/" element = {<NoteList notes={notesWithTags} availableTags={tags} onUpdateTag ={updateTag} onDeleteTag = {deleteTag}/>}/>
-  <Route path ="https://aw3s0m3ss.github.io/note-app/new" element = {<NewNote onSubmit ={onCreateNote} onAddTag ={addTag} availibleTags = {tags}/>}/>
-  <Route path="https://aw3s0m3ss.github.io/note-app/:id" element={<NoteLayout notes = {notesWithTags}/>}>
+  <Route path ="/new" element = {<NewNote onSubmit ={onCreateNote} onAddTag ={addTag} availibleTags = {tags}/>}/>
+  <Route path=":id" element={<NoteLayout notes = {notesWithTags}/>}>
     <Route index element = {<Note onDelete = {onDeleteNote}/>}/>
     <Route path="edit" element = {<EditNote onSubmit ={onUpdateNote} onAddTag ={addTag} availibleTags = {tags}/>}/>
     
